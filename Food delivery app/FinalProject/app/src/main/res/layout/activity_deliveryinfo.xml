@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deliveryinfo"
+    android:orientation="vertical"
+    android:background="#ffff00">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/logored"
+        android:layout_marginTop="30dp">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/naming"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape"
+        android:textColorHint="#000"
+        android:hint="Name"
+
+        android:ems="10"
+        android:inputType="textPersonName"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+
+        />
+    <EditText
+        android:id="@+id/Phoning"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape"
+        android:textColorHint="#000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Phone Number"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <EditText
+    android:id="@+id/adie"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/shape"
+    android:textColorHint="#000"
+        android:hint="Address"
+
+
+    android:ems="10"
+    android:inputType="textPersonName"
+
+    android:layout_marginBottom="10dp"
+
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+
+
+    />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+
+        <Button
+            android:id="@+id/bottol3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Use saved info"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/box"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/but2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Confirm"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/box"
+            android:textColor="#ffffff"/>
+
+
+    </LinearLayout>
+</LinearLayout>

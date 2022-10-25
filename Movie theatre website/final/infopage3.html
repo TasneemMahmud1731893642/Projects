@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/media-layout-responsive-layout.css">
+</head>
+<body>
+  <div style="text-align: center">
+    <div class="box" style="height: 700px;width: 500px;background-color: blue;border-radius: 5%;display: inline-block;border-style: solid;border-width: 5px;margin-top: 50px">
+      <span style="color: white;font-size: 40px;margin-top: 20px;display: inline-block">Registration info</span>
+       <div class="box2" style="height: 86.25%;width: 100%;background-color: white;display: block;margin-top: 20px;border-bottom-right-radius: 5%;border-bottom-left-radius: 5%">
+          <form method="post" action="insert2.php">
+             <div  >
+              <span style="font-size: 20px;font-weight: bold;margin-top: 50px;display:inline-block" >Full Name:</span>
+              <input type="text" name="Name" style="border-radius: 5px;height: 50px;width: 300px;border: 2px solid black"><br><br>
+              <span style="font-size: 20px ;margin-left: 30px;font-weight: bold" >Phone:</span>
+              <input type="text" name="Phone" style="border-radius: 5px;height: 50px;width: 300px;border: 2px solid black"><br><br>
+              <span style="font-size: 20px;margin-left: 35px;font-weight: bold" >Email:</span>
+              <input type="text" name="Email" style="border-radius: 5px;height: 50px;width: 300px;border: 2px solid black"><br><br>
+              <span style="font-size: 20px;font-weight: bold;margin-left: -30px" >Movie Name:</span>
+              <input type="text" name="Movie" style="border-radius: 5px;height: 50px;width: 300px;border: 2px solid black" value="Detective Pikachu"><br>
+              <span style="font-size: 20px;font-weight: bold;margin-left: -190px" >Time:</span>
+              <input type="radio" name="Time" value="12:00" >12:00pm<br>
+              <input type="radio" name="Time" value="4:00" style="margin-left: -140px" >4:00pm<br>
+              <input type="radio" name="Time" value="8:00" style="margin-left: -136px">8:00pm <br>
+              <span style="font-size: 20px;font-weight: bold;margin-left: -75px" >Hall:</span>
+              <input type="radio" name="Hall_and_Price" value="Exotica 400Tk">Hall: Exotica, Price:400Tk<br>
+              <input type="radio" name="Hall_and_Price" value="Fame 500Tk" style="margin-left: -39px" >Hall: Fame, Price:500Tk<br>
+              <input type="radio" name="Hall_and_Price" value="Royale 1000Tk" style="margin-left: -19px">Hall: Royale, Price:1000Tk <br>
+              
+              <input type="submit" value="Go to payment" style="height: 50px;width: 300px;margin-top:30px;background-color: indigo;border: 2px solid indigo;color: white">
+              </div>
+        </form>
+        
+           
+       </div>
+        
+    </div>
+     
+      
+  </div>
+    
+</body>
+</html>

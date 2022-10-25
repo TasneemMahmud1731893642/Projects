@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".foodcat"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.synnapps.carouselview.CarouselView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/carousel">
+
+        </com.synnapps.carouselview.CarouselView>
+
+    </LinearLayout>
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/myList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        app:srcCompat="@drawable/ham"
+        app:maxImageSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        />
+     <com.google.android.material.floatingactionbutton.FloatingActionButton
+         android:id="@+id/fab2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+
+         android:clickable="true"
+         app:srcCompat="@drawable/cuettrans"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="20dp"
+         android:layout_marginBottom="100dp"
+         android:visibility="invisible"
+         />
+     <com.google.android.material.floatingactionbutton.FloatingActionButton
+         android:id="@+id/fab3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+
+         android:clickable="true"
+         app:srcCompat="@drawable/prof2trans"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="20dp"
+         android:layout_marginBottom="170dp"
+         android:visibility="invisible"
+         />
+
+ </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
