@@ -1,0 +1,548 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: orange; /* Set the header background to orange */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Add spacing between text and image */
+  
+  padding: 20px; /* Add padding for spacing */
+  color: white; /* Set text color to white for contrast */
+}
+.texts1{
+  max-width: 60%; /* Limit the width of the text section */
+  text-align: left; /* Align text to the left */
+   margin-left: 100px;
+   margin-bottom: 200px;
+}
+.texts1 h1 {
+  font-size: 80px; /* Adjust the font size of the heading */
+  margin-bottom: 10px;
+}
+
+.texts1 i {
+  font-size: 20px; /* Adjust the font size of the paragraph */
+  line-height: 1.5; /* Add line height for better readability */
+  margin-left: 200px;
+}
+
+.texts {
+  max-width: 60%; /* Limit the width of the text section */
+  text-align: left; /* Align text to the left */
+  margin-right: 20px; /* Add some space between the text and image */
+}
+
+
+.texts h1 {
+  font-size: 2.5rem; /* Adjust the font size of the heading */
+  margin-bottom: 10px;
+}
+
+.texts p {
+  font-size: 1rem; /* Adjust the font size of the paragraph */
+  line-height: 1.5; /* Add line height for better readability */
+}
+
+.App-header img {
+  margin-top: 30PX;
+  max-width: 30%; /* Limit the image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image round to blend nicely */
+  margin-right: 100px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Soft shadow to create blending effect */
+  border: 3px solid rgba(255, 255, 255, 0.5); /* Light border to add subtle blending effect */
+}
+
+
+.bharatiya {
+  display: flex; /* Use flexbox to arrange the text and icon side by side */
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Add space between the text and icon */
+  padding: 20px;
+}
+
+.texts {
+  flex: 1; /* Allow the text to take up remaining space */
+  margin-left: 50px;
+}
+
+.texts h1 {
+  font-size: 2.5rem; /* Adjust the heading size */
+  margin-bottom: 10px;
+}
+
+.texts p {
+  text-align: left; /* Align text to the left */
+  font-size: 1.2rem; /* Adjust font size if needed */
+  line-height: 1.8; /* Improve readability */
+  color: #555; /* Soft dark color for text */
+}
+
+.icon {
+  
+  height: 400px; /* Desired size */
+  width: 220px;
+  
+  border: 20px solid black;
+  border-radius: 20px;
+  position: relative;
+  margin-left: 100px;
+}
+
+.bharatiya img{
+  height: 400px;
+  width: 250px;
+  margin-left: 0px;
+
+  
+}
+
+
+.notes {
+  display: flex; /* Use flexbox to arrange the text and icon side by side */
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Add space between the text and icon */
+  padding: 20px;
+  position: relative;
+}
+
+
+.learn{
+  display: flex; /* Use flexbox to arrange the text and icon side by side */
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Add space between the text and icon */
+  padding: 20px;
+  position: relative;
+}
+
+.movie{
+  display: flex; /* Use flexbox to arrange the text and icon side by side */
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Add space between the text and icon */
+  padding: 20px;
+  position: relative;
+}
+
+.more {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align horizontally */
+  justify-content: center; /* Center align vertically (if needed) */
+  text-align: center; /* Center the text */
+  margin-bottom: 30px;
+  height: 300px;
+}
+
+.monitor1{
+  margin-top: 100px;
+  height: 420px;
+  width: 545px;
+}
+.monitor2{
+  margin-top: 100px;
+  height: 420px;
+  width: 585px;
+
+}
+.monitor3{
+  margin-top: 100px;
+  height: 420px;
+  width: 565px;
+
+}
+
+.github-button {
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.github-button:hover {
+  background-color: #444;
+}
+
+.github-icon {
+  width: 20px;
+  height: 20px;
+}
+.github-link {
+  text-decoration: none; /* Remove the underline */
+}
+
+.footer{
+  background-color: orange; /* Set the header background to orange */
+  height: 200px;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Add spacing between text and image */
+}
+.linkedin-button {
+  background-color: #0077B5; /* LinkedIn's brand color */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 20px;
+}
+
+.linkedin-button:hover {
+  background-color: #006799; /* Darker LinkedIn color on hover */
+}
+
+.linkedin-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.linkedin-link {
+  text-decoration: none; /* Remove default link styling */
+}
+
+.about{
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  
+}
+.texts2 p {
+  text-align: left; /* Align text to the left */
+  font-size: 1.2rem; /* Adjust font size if needed */
+  line-height: 1.8; /* Improve readability */
+  color: #555; /* Soft dark color for text */
+}
+.texts2 h1 {
+  font-size: 2.5rem; /* Adjust the heading size */
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* For screens with a max width of 480px (small devices) */
+@media (max-width: 480px) {
+  .App-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; /* Reduced padding for mobile screens */
+  }
+
+  .texts1 {
+    max-width: 100%; 
+    text-align: center; 
+    margin-left: 0;
+    margin-bottom: 15px; /* Add some bottom margin */
+  }
+
+  .texts1 h1 {
+    font-size: 30px; /* Adjust font size for mobile */
+  }
+
+  .texts1 i {
+    font-size: 14px; /* Adjust quote font size */
+    margin-left: 0px;
+  }
+
+  .App-header img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    margin-top: 15px;
+    margin-left: 100px;
+  }
+
+  .notes, .learn, .movie {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+  }
+  .bharatiya {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .about{
+    margin-right: 80px;
+    
+  }
+
+  .bharatiya img, .notes img, .learn img, .movie img {
+    width: 90%; /* Ensure images are contained */
+    height: auto;
+  }
+  
+  .icon{
+    margin-right: 120px;
+  }
+  .notey{
+    position: absolute;
+    bottom: 68px;
+    left: 84.5px;
+    height: 151px !important; /* Force height to 200px */
+    width: 218px !important;
+  }
+
+  .text, .texts, .texts2 {
+    margin-left: 0; 
+    margin-right: 0;
+    padding: 0 15px; 
+  }
+
+  .more {
+    margin-bottom: 30px;
+    padding: 15px;
+  }
+
+  .github-button, .linkedin-button {
+    font-size: 12px; 
+    padding: 6px 12px; 
+    border-radius: 10px; 
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .linkedin-button, .github-button {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+}
+
+/* Small devices (mobile phones) */
+@media (max-width: 600px) {
+  .App-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texts1 {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .App-header img {
+    max-width: 100%;
+  }
+
+  .bharatiya, .notes, .learn, .movie {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texts {
+    margin-left: 0;
+  }
+
+  .more {
+    height: auto;
+  }
+
+  .github-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .linkedin-button, .github-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .notey {
+    width: 100%;
+  }
+
+  .bharatiya img,
+  .notes img,
+  .learn img,
+  .movie img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .texts1 i {
+    font-size: 14px; /* Adjust quote font size */
+    margin-left: 0px;
+  }
+
+  .texts1 {
+    max-width: 80%;
+    margin-left: 0;
+  }
+
+  .App-header img {
+    max-width: 60%; /* Slightly larger images for tablets */
+  }
+
+  .bharatiya, .notes, .learn, .movie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texts {
+    max-width: 80%;
+  }
+
+  .github-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .linkedin-button, .github-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .notey {
+    width: 80%;
+  }
+
+  .bharatiya img,
+  .notes img,
+  .learn img,
+  .movie img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 880px) {
+  .App-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .texts1 i {
+    font-size: 14px; /* Adjust quote font size */
+    margin-left: 0px;
+  }
+
+  .texts1 {
+    width: 100%; /* Full width of the viewport */
+    margin-left: 0; /* No negative margin unless required */
+   margin-bottom: 0;
+    
+}
+
+
+  .App-header img {
+    max-width: 60%; /* Slightly larger images for tablets */
+  }
+
+  .bharatiya, .notes, .learn, .movie {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bharatiya img{
+    height: 400px !important;
+    width: 220px !important;
+    bottom: 40px;
+    left: 365px;
+  }
+
+  .texts {
+    max-width: 80%;
+  }
+
+  .github-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .linkedin-button, .github-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .notey {
+    height: 345px !important;
+    width: 500px !important;
+    bottom: 135px;
+    left: 172px;
+  }
+
+  .bharatiya img,
+  .notes img,
+  .learn img,
+  .movie img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1200px) {
+  .App-header {
+    flex-direction: row;
+  }
+
+  .texts1 {
+    max-width: 60%;
+  }
+
+  .App-header img {
+    max-width: 30%;
+  }
+
+  .bharatiya,
+  .notes,
+  .learn,
+  .movie {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .texts {
+    max-width: 60%;
+  }
+}
