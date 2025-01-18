@@ -160,9 +160,7 @@ function App() {
   return (
     <div className="App">
       <h1 id="dd" style={{ textAlign: "center" }}>Notes app</h1>
-      <br />
-      <UserProfile />
-      <br />
+      
       <div className="my-notes">
         <Notes
           notes={notes}
