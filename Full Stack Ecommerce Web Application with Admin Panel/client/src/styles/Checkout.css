@@ -1,6 +1,7 @@
 .container {
     padding: 20px;
     margin-top: -50px;
+    height: auto !important; /* Ensure height is auto */
 }
 .cart {
     padding: 20px;
@@ -13,11 +14,10 @@
   
   .carttable {
     display: grid;
-    grid-template-columns: 2fr 1fr ;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
     margin-top: 20px;
-    
-    
+    margin-left: 0;
   }
   
   .cart-table-header {
@@ -44,13 +44,27 @@
   }
   
   
-  
+  .discount-code1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .discount-code1 input {
+    width: 170px; /* Fixed typo */
+    height: 40px;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    background: none;
+    margin: 0.5rem 0;
+    padding: 10px; /* Adjusted for better fit */
+  }
   
   
   .total {
     margin-top: 20px;
     font-size: 1.2em;
     font-weight: bold;
+    
   }
   
   .links {
@@ -65,18 +79,38 @@
   
   .pay-button {
     color: black;
-    width: 50px;
+    width: 150px;
+    height: 40px;
     text-decoration: none;
     text-align: center;
-    padding: 0.5rem 3rem;  /* Adds padding inside the button */
+   
     border-radius: 12px;  /* Border radius applied to each button */
     border: 2px solid black;  /* Adds a black border around the button */
-    transition: background-color 0.3s;  /* Optional: for smooth background color transitions */
+    
+    background-color: transparent;
     
     /* Flexbox settings for centering the text */
-    display: inline-flex;
+   
     justify-content: center;
     align-items: center;
+    
   }
+  
+  @media (max-width: 768px) {
+    .carttable {
+        margin-left: -160px;
+    }
+    .total{
+      margin-left: -160px;
+    }
+    .pay-button{
+      margin-left: -130px;
+    }
+    .discount-code1{
+      margin-left: -160px;
+      
+    }
+  }
+
   
   

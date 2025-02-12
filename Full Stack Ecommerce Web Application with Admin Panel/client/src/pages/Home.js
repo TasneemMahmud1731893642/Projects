@@ -49,9 +49,9 @@ function Home() {
   return (
     <div className="home">
       <Carousel />
-      <h1>Welcome to Jaanu Tuni Website</h1>
+      <h1>Welcome to Plink Bd</h1>
       <p>
-        At Jaanu Tuni, we believe in celebrating individuality and self-expression. Our
+        At Plink Bd, we believe in celebrating individuality and self-expression. Our
         "make-your-own" platform lets you design your world, your way. Choose from a variety of unique
         designs or bring your own ideas to life, and we’ll print them on clothing, accessories, mugs,
         and more. Whether it’s a gift, a statement piece, or something truly personal, Jaanu Tuni is

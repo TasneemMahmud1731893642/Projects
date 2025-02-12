@@ -1,29 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa'; // Import icons
 import '../styles/Navbar.css';
-import image1 from '../img/logotransparent.png';
+import image1 from '../img/logo.png';
 
 function Navbar() {
   const navigate = useNavigate();
-  const [role, setRole] = useState(null); // State to store the user's role
-  const isLoggedIn = localStorage.getItem('username'); // Check if user is logged in
+  const [role, setRole] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu
+  const isLoggedIn = localStorage.getItem('username');
 
   useEffect(() => {
-    // Fetch the user's role if logged in
     const fetchUserRole = async () => {
       if (isLoggedIn) {
         try {
           const response = await fetch('http://localhost:5001/get-role', {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ username: isLoggedIn }),
           });
-
           const data = await response.json();
           if (response.ok) {
-            setRole(data.role); // Set the role if successful
+            setRole(data.role);
           } else {
             console.error(data.error || 'Failed to fetch role');
           }
@@ -37,10 +35,9 @@ function Navbar() {
   }, [isLoggedIn]);
 
   const handleLogout = () => {
-    // Remove user data from localStorage
     localStorage.removeItem('username');
-    setRole(null); // Reset role on logout
-    navigate('/'); // Navigate to the login page (or home page)
+    setRole(null);
+    navigate('/');
   };
 
   return (
@@ -48,20 +45,19 @@ function Navbar() {
       <div className="logo">
         <img src={image1} alt="Logo" />
       </div>
-      <ul className="nav-links">
-        <li><Link to="/home">Home</Link></li>
-        <li><Link to="/shop">Shop</Link></li>
-        <li><Link to="/about">About</Link></li>
-        {isLoggedIn && <li><Link to="/profile">Profile</Link></li>}
-        {/* Conditionally render AddProduct if the user is an admin */}
-        {role === 'admin' && <li><Link to="/addproduct">Add Product</Link></li>}
-        {/* Conditionally render DiscountCodes if the user is an admin */}
-        {role === 'admin' && <li><Link to="/discount">DiscountCodes</Link></li>}
+      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </div>
+      <ul className={menuOpen ? "nav-links open" : "nav-links"}>
+        <li><Link to="/home" onClick={() => setMenuOpen(false)}>Home</Link></li>
+        <li><Link to="/shop" onClick={() => setMenuOpen(false)}>Shop</Link></li>
+        <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
+        {isLoggedIn && <li><Link to="/profile" onClick={() => setMenuOpen(false)}>Profile</Link></li>}
+        {role === 'admin' && <li><Link to="/addproduct" onClick={() => setMenuOpen(false)}>Add Product</Link></li>}
+        {role === 'admin' && <li><Link to="/discount" onClick={() => setMenuOpen(false)}>DiscountCodes</Link></li>}
         {isLoggedIn && (
           <li>
-            <button onClick={handleLogout} className="logout-button">
-              Logout
-            </button>
+            <button onClick={handleLogout} className="logout-button">Logout</button>
           </li>
         )}
       </ul>

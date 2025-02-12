@@ -7,6 +7,8 @@ import axios from 'axios';  // Import axios
 function Checkout() {
   const location = useLocation();
   const navigate = useNavigate();
+  const [address, setAddress] = useState('');
+  const [phone, setPhone] = useState('');
   const storedCart = localStorage.getItem('checkoutCart');
   const cartItems = location.state || (storedCart ? JSON.parse(storedCart) : []);
 
@@ -42,6 +44,8 @@ function Checkout() {
       discountCode,  // Include the discount code
       discountedPrice,  // Include the discounted price
       usernamep: isLoggedIn,  // Send usernamep instead of username
+      address,
+      phone
     };
   
     axios.post('http://localhost:5001/save-cart', paymentData)
@@ -67,7 +71,7 @@ function Checkout() {
   return (
     <>
       <div className="container">
-        <h1>Shopping Cart</h1>
+        <h1>Checkout</h1>
         <div className="cart">
           <div className="carttable">
             <div className="cart-table-header">
@@ -85,15 +89,32 @@ function Checkout() {
               ) : (
                 <p>Your cart is empty!</p>
               )}
+              
             </div>
+            
           </div>
+          <div className="discount-code1">
+              <input
+                type="text"
+                placeholder="Enter Address"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+              />
+              <input
+                type="text"
+                placeholder="Enter Phone"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+              />
+            
+            </div>
           {cartItems.length > 0 && (
             <>
               <div className="total">
-                <h3>Total: ${totalPrice.toFixed(2)}</h3>
+                <h4>Total: ${totalPrice.toFixed(2)}</h4>
                 {discountCode && (
                   <>
-                    <h4>Discount Code Applied: {discountCode}</h4>
+                    <h5>Discount Code Applied: {discountCode}</h5>
                     <h4>Discounted Total: ${discountedPrice.toFixed(2)}</h4>
                   </>
                 )}
@@ -101,7 +122,7 @@ function Checkout() {
             </>
           )}
           <button className="pay-button" onClick={handlePayment}>
-            Pay
+            Place order
           </button>
         </div>
       </div>

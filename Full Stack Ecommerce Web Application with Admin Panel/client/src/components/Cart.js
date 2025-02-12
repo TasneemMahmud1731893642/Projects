@@ -68,7 +68,7 @@ function Cart() {
   const discountedPrice = totalPrice - (totalPrice * (discount / 100));
 
   return (
-    <div className="container">
+    <div className="container" style={{ height: "auto" }} >
       <h1>Shopping Cart</h1>
       <div className="cart">
         <div className="cart-table">

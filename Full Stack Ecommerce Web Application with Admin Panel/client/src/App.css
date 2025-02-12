@@ -3,10 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   
   html, body {
     height: 100%; /* Ensure the body spans the full height of the viewport */
+    background-color: #e2e2e2;
   }
   
   #root {

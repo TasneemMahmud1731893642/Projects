@@ -434,7 +434,7 @@ app.post('/login', async (req, res) => {
 // Save Cart
 app.post('/save-cart', async (req, res) => {
   try {
-    const { usernamep, discountCode, cartItems } = req.body; // Get the discount code, username, and cart items
+    const { usernamep, discountCode, cartItems, address, phone } = req.body; // Get the discount code, username, and cart items
     
     // Fetch all orders for the given username
     const allOrders = await Person.find({ [usernamep]: { $exists: true } })
@@ -465,7 +465,9 @@ app.post('/save-cart', async (req, res) => {
       order: nextOrder,  // Store order as a number
       [usernamep]: cartItems,  // Store cart items
       discountCode: discountCode,  // Save the discount code
-      status: 'Active' 
+      status: 'Active' ,
+      address: address,
+      phone: phone
     });
 
     // Save the person's information to the database

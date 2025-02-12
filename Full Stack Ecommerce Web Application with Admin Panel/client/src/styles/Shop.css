@@ -1,22 +1,24 @@
-
 .shop {
   width: 100%;
   max-width: 100%;
   padding: 0 16px;  /* Equal margin on both sides of the container */
   box-sizing: border-box;  /* Prevent overflow due to padding */
+  background-color: #e2e2e2;
+  
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, calc(20% - 40px)); /* Cards with more space for gaps */
-  gap: 60px;  /* Space between the cards */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Increased min size for larger images */
+  gap: 20px;  /* Adjusted gap for smaller screens */
   width: 100%;
-  box-sizing: border-box;  /* Ensure padding doesn't affect overall width */
-  margin: 0 auto; /* Center the grid horizontally */
-  justify-content: center; /* Center grid content horizontally */
-  align-items: center; /* Center grid content vertically */
-  margin-bottom: 40px; 
+  box-sizing: border-box;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }
+
 .hiddenDiv {
   background-color: transparent;
   border: 2px solid black;
@@ -33,5 +35,28 @@
 }
 
 .hiddenDiv i {
-  font-size: 20px; /* Increase the size of the icon */
+  font-size: 24px; /* Increase the size of the icon */
+}
+
+@media (max-width: 768px) {
+  .shop {
+    padding: 0 8px;  /* Reduced padding for smaller screens */
+  }
+
+  .hiddenDiv {
+    bottom: 60px;  /* Adjusted position for smaller screens */
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .hiddenDiv i {
+    font-size: 20px; /* Adjusted icon size for smaller screens */
+  }
+}
+
+@media (min-width: 1024px) { /* Adjust the breakpoint as needed */
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+  }
 }
