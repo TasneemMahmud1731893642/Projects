@@ -30,7 +30,7 @@ const OnlineJSCompiler = () => {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer sk-FHwxMfw_EZsp91LfuiAzC7DY8rytkUO2OOU11kxGGgT3BlbkFJs9HaCnHg_LcOXj0PKzqWMDHMuEFmlA_Yov6T6COCYA`
+                    'Authorization': `Bearer API_KEY`
                 },
                 body: JSON.stringify({
                     model: 'gpt-3.5-turbo',
