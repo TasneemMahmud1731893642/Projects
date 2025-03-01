@@ -1,0 +1,126 @@
+/* App.css */
+
+/* General Body Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for the entire app */
+.App {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px 40px 30px;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Input and Button Styles */
+input[type='text'] {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  width: 70%;
+  margin-right: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+input[type='text']:focus {
+  border-color: #0072ff;
+  box-shadow: 0 0 10px rgba(0, 114, 255, 0.5);
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  background-color: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Loading and Error Message Styles */
+p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+p.loading {
+  color: #00c6ff;
+  font-weight: 600;
+}
+
+p[style] {
+  color: red;
+}
+
+/* Weather Data Styles */
+h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.weather-info {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #555;
+}
+
+.weather-info p {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.weather-info .label {
+  color: #777;
+  font-weight: 400;
+}
+
+.weather-info .value {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Weather Icon Styling */
+.weather-icon {
+  margin-top: 20px;
+}
+
+.weather-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
