@@ -1,0 +1,160 @@
+/* NetflixClone.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+}
+
+.netflix-container {
+  width: 100%;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* Video Player */
+.video-player {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.video-element {
+  width: 80%;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+.close-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-button:hover {
+  background-color: darkred;
+}
+
+/* Movies Section */
+.movies-section {
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.movies-grid {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.movie-card {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+}
+
+.movie-image {
+  width: 200px;
+  border-radius: 5px;
+}
+
+/* Additional CSS for Chatbot */
+.chat-toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chat-toggle-button:hover {
+  background-color: #b20610;
+}
+
+.chat-section {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.chat-window {
+  padding: 10px;
+  height: 250px;
+  overflow-y: auto;
+}
+
+.chat-user p {
+  background-color: #e50914;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  color: white;
+  text-align: left;
+}
+
+.chat-bot p {
+  background-color: #444;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  color: white;
+  text-align: left;
+}
+
+.chat-form {
+  display: flex;
+  border-top: 1px solid #555;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #222;
+  color: white;
+}
+
+.chat-button {
+  padding: 10px;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-button:hover {
+  background-color: #b20610;
+}
