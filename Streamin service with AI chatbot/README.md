@@ -1,4 +1,5 @@
 🎬 Streaming Service with AI Movie Chatbot
+
 A modern streaming service web application built with React, featuring an integrated AI-powered chatbot that helps users find movies based on natural language descriptions.
 
 Describe any movie you're looking for—such as "an action movie with superheroes" or "a romantic drama set in Italy" or even a movie scene and the chatbot will suggest the most relevant titles. This creates an interactive and intuitive experience for discovering movies beyond traditional search methods.
